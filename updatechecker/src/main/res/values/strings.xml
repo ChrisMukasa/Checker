@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="checking_for_update">Checking for update…</string>
+    <string name="dialog_progress_title">A new version is available</string>
+    <string name="dialog_progress_message">Please update now to get more features and a best user experience</string>
+    <string name="dialog_progress_cancel">Cancel</string>
+    <string name="dialog_progress_update">Update</string>
+    <string name="no_update_available">No update is available</string>
+    <string name="update_available">A update is available</string>
+</resources>
