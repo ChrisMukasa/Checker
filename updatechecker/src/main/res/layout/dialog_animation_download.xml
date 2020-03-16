@@ -45,13 +45,13 @@
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
                 android:maxLines="2"
+                android:text="@string/dialog_progress_title"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 android:textColor="@android:color/black"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/animation_view"
                 app:layout_constraintStart_toStartOf="@+id/animation_view"
-                app:layout_constraintTop_toBottomOf="@+id/animation_view"
-                tools:text="@string/dialog_progress_title" />
+                app:layout_constraintTop_toBottomOf="@+id/animation_view" />
 
             <TextView
                 android:id="@+id/lb_dialog_animation_message"
@@ -59,21 +59,20 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
+                android:text="@string/dialog_progress_message"
                 android:textColor="@android:color/darker_gray"
                 app:layout_constraintEnd_toEndOf="@+id/lb_dialog_animation_title"
                 app:layout_constraintStart_toStartOf="@+id/lb_dialog_animation_title"
-                app:layout_constraintTop_toBottomOf="@+id/lb_dialog_animation_title"
-                tools:text="@string/dialog_progress_message" />
+                app:layout_constraintTop_toBottomOf="@+id/lb_dialog_animation_title" />
 
             <Button
                 android:id="@+id/dialog_update_cancel"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/shape_btn_cancel"
+                android:drawableStart="@drawable/ic_close"
                 android:drawableLeft="@drawable/ic_close"
                 android:drawablePadding="16dp"
                 android:fontFamily="@font/poppins"
@@ -84,20 +83,19 @@
                 android:textAllCaps="false"
                 android:textColor="@color/color_red"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/dialog_update_update"
-                app:layout_constraintHorizontal_bias="0.47"
                 app:layout_constraintStart_toStartOf="@+id/lb_dialog_animation_message"
                 app:layout_constraintTop_toBottomOf="@+id/lb_dialog_animation_message" />
 
             <Button
                 android:id="@+id/dialog_update_update"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/shape_btn_update"
+                android:drawableStart="@drawable/ic_cloud_download"
                 android:drawableLeft="@drawable/ic_cloud_download"
                 android:drawablePadding="16dp"
                 android:fontFamily="@font/poppins"
@@ -109,6 +107,7 @@
                 android:textColor="@android:color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/lb_dialog_animation_message"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/dialog_update_cancel"
                 app:layout_constraintTop_toBottomOf="@+id/lb_dialog_animation_message" />
 
